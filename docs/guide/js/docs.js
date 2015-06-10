@@ -149,4 +149,11 @@
     scrollTo: 100
   });
 
+  $(".clickToComplete").on("click", function(){
+    $(this).toggleClass("complete");
+  });
+
+  $(".clickToActivate").on("click", function(){
+    $(this).toggleClass("active");
+  });
 })(jQuery);

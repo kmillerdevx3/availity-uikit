@@ -49,6 +49,10 @@
   &.active {
     > .stepwizard-badge {
       color: @white;
+      -webkit-transition: background-color 0.5s cubic-bezier(0.68,-0.01, 0.1, 1.6);
+      -moz-transition: background-color 0.5s cubic-bezier(0.68,-0.01, 0.1, 1.6);
+      -o-transition: background-color 0.5s cubic-bezier(0.68,-0.01, 0.1, 1.6);
+      transition: background-color 0.5s cubic-bezier(0.68,-0.01, 0.1, 1.6);
       background-color: @btn-success-bg;
       border-color: @btn-success-border;
     }
@@ -96,6 +100,7 @@
 .stepwizard-progress {
 
   .stepwizard-badge {
+    font-size: 0;
     &:after {
       content: '\0000a0';
     }
@@ -105,6 +110,11 @@
     &.complete {
       > .stepwizard-badge {
         &:after {
+          font-size: @availity-app-icon-md-font-size;
+          -webkit-transition: font-size 0.5s cubic-bezier(0.68,-0.01, 0.1, 1.6);
+          -moz-transition: font-size 0.5s cubic-bezier(0.68,-0.01, 0.1, 1.6);
+          -o-transition: font-size 0.5s cubic-bezier(0.68,-0.01, 0.1, 1.6);
+          transition: font-size 0.5s cubic-bezier(0.68,-0.01, 0.1, 1.6);
           .iconify(@availity-icon-ok);
         }
       }
