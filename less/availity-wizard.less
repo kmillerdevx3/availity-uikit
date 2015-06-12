@@ -19,6 +19,10 @@
   border-radius: 15px;
   background-color: @white;
   border: 2px solid @btn-success-border;
+  -webkit-transition: background-color 0.3s cubic-bezier(0.68,-0.01, 0.1, 1.6);
+  -moz-transition: background-color 0.3s cubic-bezier(0.68,-0.01, 0.1, 1.6);
+  -o-transition: background-color 0.3s cubic-bezier(0.68,-0.01, 0.1, 1.6);
+  transition: background-color 0.3s cubic-bezier(0.68,-0.01, 0.1, 1.6);
 }
 
 .stepwizard-title {
@@ -49,16 +53,20 @@
   &.active {
     > .stepwizard-badge {
       color: @white;
-      -webkit-transition: background-color 0.5s cubic-bezier(0.68,-0.01, 0.1, 1.6);
-      -moz-transition: background-color 0.5s cubic-bezier(0.68,-0.01, 0.1, 1.6);
-      -o-transition: background-color 0.5s cubic-bezier(0.68,-0.01, 0.1, 1.6);
-      transition: background-color 0.5s cubic-bezier(0.68,-0.01, 0.1, 1.6);
       background-color: @btn-success-bg;
       border-color: @btn-success-border;
     }
 
     > .stepwizard-title {
+      -webkit-transition: color 0.5s cubic-bezier(0.68,-0.01, 0.1, 1.6);
+      -moz-transition: color 0.5s cubic-bezier(0.68,-0.01, 0.1, 1.6);
+      -o-transition: color 0.5s cubic-bezier(0.68,-0.01, 0.1, 1.6);
+      transition: color 0.5s cubic-bezier(0.68,-0.01, 0.1, 1.6);
       color: @brand-success;
+      -webkit-transition: font-weight 0.5s cubic-bezier(0.4, 0, 1, 1);
+      -moz-transition: font-weight 0.5s cubic-bezier(0.4, 0, 1, 1);
+      -o-transition: font-weight 0.5s cubic-bezier(0.4, 0, 1, 1);
+      transition: font-weight 0.5s cubic-bezier(0.4, 0, 1, 1);
       font-weight: @availity-font-weight-bold;
     }
   }
@@ -98,10 +106,10 @@
 }
 
 .stepwizard-progress {
-
   .stepwizard-badge {
-    font-size: 0;
+    font-size: @availity-app-icon-md-font-size;
     &:after {
+      font-size: 1px; // 1 not zero because IE. :I
       content: '\0000a0';
     }
   }
