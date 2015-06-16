@@ -27,12 +27,17 @@
   color: @green-darker;
   font-weight: @availity-font-weight-bold;
   min-width: 160px; //added this so button does not jump when you hover over it
+  -webkit-transition: background-color 0.4s cubic-bezier(0.02, 0.5, 0, 0.96);
+  -moz-transition: background-color 0.4s cubic-bezier(0.02, 0.5, 0, 0.96);
+  -o-transition: background-color 0.4s cubic-bezier(0.02, 0.5, 0, 0.96);
+  transition: background-color 0.4s cubic-bezier(0.02, 0.5, 0, 0.96);
   &.has-icon-left .icon {
     position: absolute;
     top: 10px;
     left: -5px;
   }
 }
+
 
 .btn-add-favorites {
   &:before {
@@ -48,6 +53,12 @@
 
   &:active,
   &.active {
+    > .icon {
+      -webkit-transition: color 0.5s cubic-bezier(0.42, 0, 0.1, 1.01);
+      -moz-transition: color 0.5s cubic-bezier(0.42, 0, 0.1, 1.01);
+      -o-transition: color 0.5s cubic-bezier(0.42, 0, 0.1, 1.01);
+      transition: color 0.5s cubic-bezier(0.42, 0, 0.1, 1.01);
+    }
     border-color: @green-darker;
     background-color: darken(@green-darker, 5%);
     color: white;

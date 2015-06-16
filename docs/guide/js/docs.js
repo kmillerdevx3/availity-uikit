@@ -156,4 +156,14 @@
   $(".clickToActivate").on("click", function(){
     $(this).toggleClass("active");
   });
+
+  $("#progressTheBar").on("click", function(){
+    var w = $(".moreProgress").width() / $('.moreProgress').parent().width() * 100;
+    w = (Math.floor(w/10)*10 + 20) % 120;
+    var nWidth = Math.floor( w * $('.moreProgress').parent().width() / 100);
+
+    $(".moreProgress").width( nWidth );
+    $(".moreProgressText").text(w + "%");
+    //console.log($(".moreProgress").width());
+  });
 })(jQuery);
