@@ -62,6 +62,7 @@ module.exports = {
     sort: {
       // sort order for components.  if the title changes we are toast!
       components: [
+        'Accordion',
         'Colors',
         'Typography',
         'Buttons',
