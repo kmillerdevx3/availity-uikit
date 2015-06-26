@@ -102,7 +102,7 @@ title: Accordion
 
 
 <code class='language-markup'>
-  <h4> Example 1</h4>
+  <h4>Example 1</h4>
   <div class="row">
     <div class="col-sm-3"><strong>Header</strong></div>
     <div class="col-sm-3"><strong>Header</strong></div>
@@ -110,40 +110,17 @@ title: Accordion
   </div>
   <div class="row">
     <div class='accordion' id='something'>
+
       <div class='accordion-pane' data-ng-show='show()'>
         <div class='accordion-heading'>
-          <a class='accordion-toggle' data-ng-show='!disabled' data-toggle='collapse' data-parent='#p-id-4' href='#id-4'>title</a>
-          <span class='accordion-toggle' data-ng-show='disabled'>title?</span>
-        </div>
-        <div id='id-4' class='accordion-body collapse'>
-          <div class='accordion-inner'>
-            inner
-          </div>
-        </div>
-      </div>
-
-      <div class='accordion-pane disabled' data-ng-show='show()' data-disabled="true">
-        <div class='accordion-heading'>
-          <a class='accordion-toggle' data-ng-show='!disabled' data-toggle='collapse' data-parent='#p-id-2' href='#id-2'>title</a>
-          <span class='accordion-toggle' data-ng-show='disabled'>title?</span>
-        </div>
-        <div id='id-2' class='accordion-body collapse'>
-          <div class='accordion-inner'>
-            content
-          </div>
-        </div>
-      </div>
-
-      <div class='accordion-pane disabled' data-ng-show='show()' data-disabled="true">
-        <div class='accordion-heading'>
-          <div class="row" data-ng-show='!disabled'>
+          <div class="row">
             <div class="btn-group pull-right">
-              <button type="button" class="btn btn-ghost dropdown-toggle disabled" data-toggle="dropdown">
+              <button type="button" class="btn btn-ghost dropdown-toggle" data-toggle="dropdown">
                 <span class="icon icon-menu"></span>
               </button>
               <ul class="dropdown-menu dropdown-menu-right" role="menu">
-                <li><a class='accordion-toggle' data-toggle='collapse' data-parent='#2' href='#2'>Second Pane</a></li>
-                <li><a class='accordion-toggle' data-toggle='collapse' data-parent='#2' href='#2'>Second Pane</a></li>
+                <li><a class='accordion-toggle' data-ng-show='!disabled' data-toggle='collapse' data-parent='#1' href='#1'>First Pane</a></li>
+                <li><a class='accordion-toggle' data-ng-show='!disabled' data-toggle='collapse' data-parent='#1' href='#1'>First Pane</a></li>
               </ul>
             </div>
             <div class="col-sm-3">Test</div>
@@ -151,16 +128,73 @@ title: Accordion
             <div class="col-sm-3">Test</div>
             <div class="clearfix"></div>
           </div>
-          <span class='accordion-toggle' data-ng-show='disabled'>title?</span>
         </div>
-        <div id='id-3' class='accordion-body collapse'>
+        <div id='1' class='accordion-body collapse'>
           <div class='accordion-inner'>
-            content
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris at scelerisque est.
+            Cras eu turpis sit amet nulla tincidunt egestas quis id turpis. Etiam non tellus ex.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris at scelerisque est.
+            Cras eu turpis sit amet nulla tincidunt egestas quis id turpis. Etiam non tellus ex.
           </div>
         </div>
       </div>
 
-    </div>
+      <div class='accordion-pane disabled' data-ng-show='show()' data-disabled="true">
+        <div class='accordion-heading'>
+          <div class="row">
+            <div class="btn-group pull-right">
+              <button type="button" class="btn btn-ghost dropdown-toggle disabled" data-toggle="dropdown">
+                <span class="icon icon-menu"></span>
+              </button>
+              <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                <li><a class='accordion-toggle' data-ng-show='!disabled' data-toggle='collapse' data-parent='#2' href='#2'>Second Pane</a></li>
+                <li><a class='accordion-toggle' data-ng-show='!disabled' data-toggle='collapse' data-parent='#2' href='#2'>Second Pane</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-3">Test</div>
+            <div class="col-sm-3">Test</div>
+            <div class="col-sm-3">Test</div>
+            <div class="clearfix"></div>
+          </div>
+        </div>
+        <div id='2' class='accordion-body collapse'>
+          <div class='accordion-inner'>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris at scelerisque est.
+            Cras eu turpis sit amet nulla tincidunt egestas quis id turpis. Etiam non tellus ex.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris at scelerisque est.
+            Cras eu turpis sit amet nulla tincidunt egestas quis id turpis. Etiam non tellus ex.
+          </div>
+        </div>
+      </div>
 
+      <div class='accordion-pane' data-ng-show='show()'>
+        <div class='accordion-heading active'>
+          <a class='accordion-toggle' data-ng-show='!disabled' data-toggle='collapse' data-parent='#3' href='#3'>Third Pane</a>
+        </div>
+        <div id='3' class='accordion-body collapse in' aria-expanded="true">
+          <div class='accordion-inner'>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris at scelerisque est.
+            Cras eu turpis sit amet nulla tincidunt egestas quis id turpis. Etiam non tellus ex.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris at scelerisque est.
+            Cras eu turpis sit amet nulla tincidunt egestas quis id turpis. Etiam non tellus ex.
+            <div class="clearfix"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class='accordion-pane' data-ng-show='show()'>
+        <div class='accordion-heading'>
+          <a class='accordion-toggle' data-ng-show='!disabled' data-toggle='collapse' data-parent='#4' href='#4'>Fourth Pane</a>
+        </div>
+        <div id='4' class='accordion-body collapse'>
+          <div class='accordion-inner'>
+            Two
+            <div class="clearfix"></div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
   </div>
 </code>
