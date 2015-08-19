@@ -15,10 +15,10 @@
     "less/availity-uikit.less",
     "dist/css/availity-uikit.css",
     "dist/js/availity-uikit.js",
-    "dist/fonts/availity-icon-font.eot",
-    "dist/fonts/availity-icon-font.svg",
-    "dist/fonts/availity-icon-font.ttf",
-    "dist/fonts/availity-icon-font.woff"
+    "dist/fonts/availity-icon-font-pdm.eot",
+    "dist/fonts/availity-icon-font-pdm.svg",
+    "dist/fonts/availity-icon-font-pdm.ttf",
+    "dist/fonts/availity-icon-font-pdm.woff"
   ],
   "dependencies": {
     "jquery": ">=1.9.1 <2.0.0",
