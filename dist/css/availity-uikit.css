@@ -1,5 +1,5 @@
 /**
- * availity-uikit v0.11.0 -- August-13
+ * availity-uikit v0.11.0 -- August-19
  * Copyright 2015 Availity, LLC 
  */
 
@@ -1232,7 +1232,7 @@ a:hover {
   color: #000000;
 }
 a.external:after {
-  font-family: "availity-icon-font";
+  font-family: "availity-icon-font-pdm";
   content: '\e80a';
   font-style: normal;
   font-weight: normal;
@@ -1738,7 +1738,7 @@ h6 .header-link:after,
 .h4 .header-link:after,
 .h5 .header-link:after,
 .h6 .header-link:after {
-  font-family: "availity-icon-font";
+  font-family: "availity-icon-font-pdm";
   content: '\e84d';
   font-style: normal;
   font-weight: normal;
@@ -1812,7 +1812,7 @@ h6 .btn-header-link:after,
 .h4 .btn-header-link:after,
 .h5 .btn-header-link:after,
 .h6 .btn-header-link:after {
-  font-family: "availity-icon-font";
+  font-family: "availity-icon-font-pdm";
   content: '\e84d';
   font-style: normal;
   font-weight: normal;
@@ -1911,7 +1911,7 @@ p {
   line-height: 1.5em;
 }
 .section-header .section-header-link:after {
-  font-family: "availity-icon-font";
+  font-family: "availity-icon-font-pdm";
   content: '\e84d';
   font-style: normal;
   font-weight: normal;
@@ -2943,7 +2943,7 @@ table th[class*="col-"] {
   position: relative;
 }
 .status-col-complete:before {
-  font-family: "availity-icon-font";
+  font-family: "availity-icon-font-pdm";
   content: '\e809';
   font-style: normal;
   font-weight: normal;
@@ -4097,7 +4097,7 @@ input[type="button"].btn-block {
   font-weight: bold;
 }
 .btn-favorites:before {
-  font-family: "availity-icon-font";
+  font-family: "availity-icon-font-pdm";
   content: "\e849";
   font-style: normal;
   font-weight: normal;
@@ -4167,7 +4167,7 @@ input[type="button"].btn-block {
   width: 125px;
 }
 .btn-filters:before {
-  font-family: "availity-icon-font";
+  font-family: "availity-icon-font-pdm";
   content: '\e81a';
   font-style: normal;
   font-weight: normal;
@@ -5628,7 +5628,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   text-decoration: none;
 }
 .navbar-nav > li > a.dropdown-toggle:after {
-  font-family: "availity-icon-font";
+  font-family: "availity-icon-font-pdm";
   content: '\e802';
   font-style: normal;
   font-weight: normal;
@@ -5645,7 +5645,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   top: 1px;
 }
 .navbar-nav > li > a.dropdown-toggle-secondary:after {
-  font-family: "availity-icon-font";
+  font-family: "availity-icon-font-pdm";
   content: '\e84b';
   font-style: normal;
   font-weight: normal;
@@ -5704,7 +5704,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 }
 .breadcrumb > li + li:before {
   padding: 0 3px 0 2px;
-  font-family: "availity-icon-font";
+  font-family: "availity-icon-font-pdm";
   font-weight: bold;
 }
 .breadcrumb > .active {
@@ -6363,7 +6363,7 @@ a.thumbnail.active {
 .progress.progress-complete:before,
 .progress.progress-complete:after {
   position: absolute;
-  font-family: "availity-icon-font";
+  font-family: "availity-icon-font-pdm";
   font-weight: normal;
   opacity: 1;
 }
@@ -7045,7 +7045,7 @@ button.list-group-item-danger.active:focus {
   font-weight: bold;
 }
 .panel .panel-heading-link:after {
-  font-family: "availity-icon-font";
+  font-family: "availity-icon-font-pdm";
   content: '\e84d';
   font-style: normal;
   font-weight: normal;
@@ -7147,7 +7147,7 @@ button.list-group-item-danger.active:focus {
   text-decoration: none;
 }
 .panel-collapsible a:before {
-  font-family: "availity-icon-font";
+  font-family: "availity-icon-font-pdm";
   content: '\e802';
   font-style: normal;
   font-weight: normal;
@@ -7163,7 +7163,7 @@ button.list-group-item-danger.active:focus {
   margin-right: 5px;
 }
 .panel-collapsible .collapsed:before {
-  font-family: "availity-icon-font";
+  font-family: "availity-icon-font-pdm";
   content: '\e806';
   font-style: normal;
   font-weight: normal;
@@ -7379,7 +7379,7 @@ button.close {
   font-size: 12px;
 }
 .inline-help:before {
-  font-family: "availity-icon-font";
+  font-family: "availity-icon-font-pdm";
   content: "\e81b";
   font-style: normal;
   font-weight: normal;
@@ -8132,7 +8132,7 @@ button.close {
   text-decoration: none;
 }
 .notification-menu-link:after {
-  font-family: "availity-icon-font";
+  font-family: "availity-icon-font-pdm";
   content: '\e84d';
   font-style: normal;
   font-weight: normal;
@@ -8170,7 +8170,7 @@ button.close {
 }
 .favorites-menu-footer a:after,
 .notifications-menu-footer a:after {
-  font-family: "availity-icon-font";
+  font-family: "availity-icon-font-pdm";
   content: '\e84d';
   font-style: normal;
   font-weight: normal;
@@ -8280,7 +8280,7 @@ button.close {
   content: '\0000a0';
 }
 .stepwizard-progress .stepwizard-step.complete > .stepwizard-badge:after {
-  font-family: "availity-icon-font";
+  font-family: "availity-icon-font-pdm";
   content: '\e85c';
   font-style: normal;
   font-weight: normal;
@@ -11225,7 +11225,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   position: absolute !important;
 }
 .select2-search:after {
-  font-family: "availity-icon-font";
+  font-family: "availity-icon-font-pdm";
   content: '\e84f';
   font-style: normal;
   font-weight: normal;
@@ -11251,7 +11251,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 }
 .select2-container .select2-choice abbr:before,
 .select2-search-choice-close:before {
-  font-family: "availity-icon-font";
+  font-family: "availity-icon-font-pdm";
   content: '\e862';
   font-style: normal;
   font-weight: normal;
@@ -11276,7 +11276,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   padding-top: .3em;
 }
 .select2-container .select2-choice .select2-arrow b:before {
-  font-family: "availity-icon-font";
+  font-family: "availity-icon-font-pdm";
   content: '\e802';
   font-style: normal;
   font-weight: normal;
@@ -11290,7 +11290,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   line-height: 1em;
 }
 .select2-dropdown-open .select2-choice .select2-arrow b:before {
-  font-family: "availity-icon-font";
+  font-family: "availity-icon-font-pdm";
   content: '\e804';
   font-style: normal;
   font-weight: normal;
