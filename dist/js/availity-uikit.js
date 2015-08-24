@@ -1,5 +1,9 @@
 /**
+<<<<<<< HEAD
  * availity-uikit v0.11.0 -- August-19
+=======
+ * availity-uikit v0.11.2 -- August-24
+>>>>>>> origin/master
  * Copyright 2015 Availity, LLC 
  */
 
