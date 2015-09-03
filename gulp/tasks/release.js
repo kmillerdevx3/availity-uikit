@@ -21,8 +21,14 @@ gulp.task('release:sequence', function() {
     'release:bump',
     ['dist:css', 'dist:js', 'dist:fonts', 'dist:images'],
     'readme',
+    'release:add',
     'release:tag'
   );
+});
+
+gulp.task('release:add', function() {
+  return gulp.src('./dist/*')
+    .pipe(git.add({args: '-f'}));
 });
 
 gulp.task('release:tag', function() {

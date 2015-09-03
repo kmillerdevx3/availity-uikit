@@ -17,13 +17,22 @@ var concat = require('gulp-concat');
 var replace = require('gulp-replace');
 var uglify = require('gulp-uglify');
 
+var runSequence = require('run-sequence').use(gulp);
+
+gulp.task('dist', function() {
+  runSequence(
+    ['clean:css', 'clean:js', 'clean:fonts', 'clean:images'],
+    ['dist:css', 'dist:js', 'dist:fonts', 'dist:images']
+  );
+});
+
 gulp.task('dist:css', function() {
 
-  return gulp.src(config.css.targets)
-    .pipe(plumber(function(err) {
-      logger.error(err.message);
-      this.emit('end');
-    }))
+  return gulp.src(config.less.src)
+     .pipe(plumber(function(err) {
+       logger.error(err.message);
+       this.emit('end');
+     }))
     .pipe(less())
     .pipe(replace(config.regex.select[0], config.regex.select[1]))
     .pipe(sourcemaps.init({loadMaps: true}))
@@ -77,11 +86,4 @@ gulp.task('dist:images', function() {
   return gulp.src(config.images.src)
     .pipe(gulpif(config.args.verbose, using({prefix:'Task [dist:images] using'})))
     .pipe(gulp.dest(config.images.destDist));
-});
-
-gulp.task('dist', ['clean:dist'], function() {
-  gulp.start('dist:css');
-  gulp.start('dist:js');
-  gulp.start('dist:fonts');
-  gulp.start('dist:images');
 });
