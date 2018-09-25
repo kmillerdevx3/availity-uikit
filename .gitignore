@@ -1,8 +1,9 @@
 /node_modules/
-.gradle
-.idea
-/bower_components/
-/coverage-reports/
-.DS_Store
-
+/dist/
 /build/
+/lib/
+
+.idea
+.DS_Store
+npm-debug.log
+package-lock.json
